@@ -1,11 +1,11 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-from tkinter import *
-from tkinter import messagebox
+#from tkinter import *
+#from tkinter import messagebox
 import time
 import webbrowser
 
-window = Tk()
+#window = Tk()
 
 while(1):												# 지구 멸망 전까지는 아래 명령을 계속 수행하라 !!
     html = urlopen("http://www.welkeepsmall.com")		# 웰킵스 쇼핑몰에 접속하기
