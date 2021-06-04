@@ -6,12 +6,9 @@ Created on Mon May 10 15:02:53 2021
 """
 
 nVal = 0
-nCnt = 3717
-#nPrice = 41800
-#nPrice = 44300 # 2021/05/20
-#nPrice = 44500 # 2021/05/24
-#nPrice = 44800 # 2021/05/25
-nPrice = 46400 # 2021/05/27
+nCnt = 3730
+#nPrice = 44500 # 2021/06/01
+nPrice = 45750 # 2021/06/04
 njump = 100000000
 nMax = 100000000
 nLoop = 40

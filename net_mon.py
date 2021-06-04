@@ -31,7 +31,6 @@ def SendMail(hostname):
     s.sendmail( 'niemand@naver.com', 'tykwon@unet.kr', msg.as_string() ) #메일 전송, 문자열로 변환하여 보냅니다.
     
     s.close() #smtp 서버 연결을 종료합니다.
-    
 
 hosts = [
 'wolf',
@@ -47,7 +46,7 @@ hosts = [
 'darthvader',
 'luke',
 'hulk',
-'hawkeye',
+#'hawkeye',
 'trustkms1',
 'trustkms2',
 'trustkms3',
@@ -56,17 +55,18 @@ hosts = [
 'marvel',
 'pkid'
 ]
-while 1:
-    os.system('cls')
-    for hostname in hosts:
-        result = ping(hostname)
-        if result == None:
-            print(f'{hostname:12} : ______')
-            if hostname == 'pkid':
-                SendMail(hostname)
-                sleep(600)
-        else:
-            print(f'{hostname:12} : Active')            
-    print('============================')
-    sleep(5)
+
+#while 1:
+os.system('cls')
+for hostname in hosts:
+    result = ping(hostname)
+    if result == None:
+        print(f'{hostname:12} : ______')
+        if hostname == 'pkid':
+            SendMail(hostname)
+            sleep(600)
+    else:
+        print(f'{hostname:12} : Active')            
+print('============================')
+sleep(5)
     
