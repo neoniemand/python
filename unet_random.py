@@ -16,7 +16,8 @@ base64_len_p = pointer(base64_len)
 
 plain_len = c_int()
 
-cplain_len = int( len(priHEX) / 2 )
+cplain_len = c_int()
+cplain_len = len(priHEX) / 2
 
 print("PLAIN LEN = [", cplain_len, "]")
 
@@ -26,7 +27,7 @@ unet.TNC_HEX2BIN.argtypes = (POINTER(c_char), POINTER(c_char), c_int)
 unet.TNC_HEX2BIN(cPlain, cpriHEX, len(priHEX))
 
 unet.TNC_ENCODE_BASE64.argtypes = (POINTER(c_char), POINTER(c_int), POINTER(c_char), c_int)
-unet.TNC_ENCODE_BASE64(cBase64Enc, base64_len_p, cPlain, cplain_len)
+unet.TNC_ENCODE_BASE64(cBase64Enc, base64_len_p, cPlain, 1222)
 
 print("BASE64    = [", cBase64Enc.value, "]")
 print("BASE64LEN = [", base64_len, "]")
