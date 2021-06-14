@@ -6,9 +6,8 @@ Created on Mon May 10 15:02:53 2021
 """
 
 nVal = 0
-nCnt = 3730
-#nPrice = 44500 # 2021/06/01
-nPrice = 45750 # 2021/06/04
+nCnt = 3745
+nPrice = 42800 # 2021/06/08
 njump = 100000000
 nMax = 100000000
 nLoop = 40
