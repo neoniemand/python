@@ -38,8 +38,8 @@ hosts = [
 'tiger',
 'tiger_bak',
 'fox',
-#'anakin',
-#'yoda',
+'anakin',
+'yoda',
 'han',
 'Jedi',
 'Xwing',
@@ -51,13 +51,14 @@ hosts = [
 'trustkms2',
 'trustkms3',
 'svn',
-'ncipher',
+#'ncipher',
 'marvel',
 'pkid'
 ]
 
 #while 1:
 os.system('cls')
+print('============================')
 for hostname in hosts:
     result = ping(hostname)
     if result == None:
@@ -68,5 +69,5 @@ for hostname in hosts:
     else:
         print(f'{hostname:12} : Active')            
 print('============================')
-sleep(5)
+#sleep(5)
     
