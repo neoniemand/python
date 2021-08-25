@@ -33,7 +33,7 @@ def SendMail(hostname):
     s.close() #smtp 서버 연결을 종료합니다.
 
 hosts = [
-'wolf',
+#'wolf',
 'wolf2',
 'tiger',
 'tiger_bak',
