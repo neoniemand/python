@@ -25,7 +25,7 @@ def SendMail(hostname):
     
     s=smtplib.SMTP( smtpName , smtpPort ) #메일 서버 연결
     s.starttls() #TLS 보안 처리
-    s.login( 'niemand' , 'skfkrh./01' ) #로그인
+    s.login( 'niemand' , '' ) #로그인
     s.sendmail( 'niemand@naver.com', 'kjn@unet.kr', msg.as_string() ) #메일 전송, 문자열로 변환하여 보냅니다.
     s.sendmail( 'niemand@naver.com', 'gspark@unet.kr', msg.as_string() ) #메일 전송, 문자열로 변환하여 보냅니다.
     s.sendmail( 'niemand@naver.com', 'tykwon@unet.kr', msg.as_string() ) #메일 전송, 문자열로 변환하여 보냅니다.
