@@ -27,6 +27,12 @@ response.auto_close = False
 for line in io.TextIOWrapper(response):
     if '<dd>현재가 ' in line:        
         print(status_str(line.strip()))
+    if '<dd>고가 ' in line:        
+        print(status_str(line.strip()))
+    if '<dd>저가 ' in line:        
+        print(status_str(line.strip()))
             
 
+#for line in io.TextIOWrapper(response):
+#    print(line.strip())
     
